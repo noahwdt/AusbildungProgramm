@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@469&display=swap');
+
+body {
+	font-family: 'Oswald', sans-serif;
+	margin: auto;
+}
+
+.hero-bg{
+	background: #b4b8bf url(bilder/bg.jpg);
+	color: white;
+	text-align: center;
+	padding: 4em;
+}
+
+header{
+	padding:1em 0;
+}
+
+.hero-bg a{
+	cursor: pointer;
+}
+
+section{
+	margin: 0 1em;
+}
+
+h1{
+	font-size:1.5rem;
+	padding: 0.5em 0 0.3;
+}
+h1 span{
+	font-size: 3rem;
+	position: relative;
+	z-index=5;
+}
+
+h1 span::before{
+	content: '';
+	position: absolute;
+	width: 5.5em;
+	background: #a7a9ab;
+	height: .2em;
+	bottom:0;
+	z-index:1;
+	margin-left: -.3em;
+}
+
+.hero-bg pre{
+	font-size: 1.5rem;
+	padding-top: 2em;
+	padding-bottom: .1em;
+}
+
+.hero-bg p{
+	margin: 1em auto;
+	font-weight: bold;
+	font-size:1.5rem;
+}
+.hero-bg p span{
+	font-weight: normal;
+}
+.inf{
+	background-color:#657075;
+	margin: 2em 15em 0 ;
+	padding: -1em 0 -4em;
+	border: double;
+	border-color: #3e5661;
+	border-radius: 1em;
+	box-shadow: 10px 10px 10px rgba(0,0,0);
+}
+
+.haupt{
+	margin:0;
+}
+
+.rechts-col{
+	text-align: center;
+	margin: 1em 1em;
+	grid-area: content;
+}
+
+h2{
+	text-transform: uppercase;
+	position: relative;
+	font-size: 2rem;
+}
+
+h2::before{
+	content: '';
+	position: absolute;
+	width: 5.5em;
+	background: #a7a9ab;
+	height: .2em;
+	bottom:0;
+	z-index:1;
+	margin-left: -.3em;
+}
+
+h3{
+	text-transform: uppercase;
+	position: relative;
+	text-align: center;
+	font-size: 2rem;
+}
+
+h3::before{
+	content: '';
+	position: absolute;
+	width: 7.8em;
+	background: #a7a9ab;
+	height: .2em;
+	bottom:0;
+	z-index:1;
+	margin-left: -.3em;
+}
+
+.haupt img{
+	width: 100%;
+	grid-area: bowl;
+}
+
+.pe{
+	border:double;
+	border-radius: 2em;
+	line-height: 2em;
+}
+
+.be{
+	text-align: center;
+	margin: 0 28em;
+	width: 280px;
+	font-size:1.1rem;
+	border-radius: 2em;
+	box-shadow: 10px 10px 10px rgba(0,0,0);
+	background: grey;
+}
+section.haupt{
+	display:grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-areas:
+		"bowl content"
+}
+
+
+
+
+
